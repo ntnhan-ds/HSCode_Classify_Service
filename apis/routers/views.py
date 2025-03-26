@@ -11,8 +11,6 @@ def ping_to_server():
     return {"message":"This is server classify hscode"}
 
 
-from fastapi.responses import JSONResponse
-
 @router.post("/single_predict")
 async def sentence_single(input_data: SentenceInput):
     try:
